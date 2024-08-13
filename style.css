@@ -1,0 +1,261 @@
+:root {
+  --pr-color: #5468e7;
+  --sk-color: #232340;
+  --font: #ffffff;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+}
+
+/* FONT SIZE */
+.primary-text {
+  font-size: 3rem;
+  line-height: 60px;
+  font-weight: 700;
+}
+.second-text {
+  font-size: 3rem;
+  line-height: 60px;
+  font-weight: 700;
+}
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-text {
+  color: var(--pr-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+/* NAVBAR */
+.navbar {
+  z-index: 1000;
+}
+.nav-color {
+  background-color: var(--sk-color);
+  transition: all ease-in-out 0.3s;
+}
+.bg-transparent {
+  transition: all ease-in-out 0.3s;
+}
+.nav-link {
+  font-weight: 500;
+  color: var(--font);
+  font-size: 1rem;
+  text-decoration: underline;
+}
+.btn-nav {
+  color: var(--font);
+  background-color: rgba(84, 104, 231, 0.5);
+  width: 184px;
+  height: 47px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+}
+
+/* HERO */
+#hero-section {
+  background-image: url(./asset/hero-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: rigth;
+  height: 100vh;
+}
+
+.hero-container {
+  color: var(--font);
+}
+/* .hero-text {
+  max-width: 550px;
+}
+.hero-text p {
+  max-width: 350px;
+}
+.hero-form {
+  max-width: 550px;
+} */
+.hero-form input {
+  background-image: url("./asset/arrow_forward_24px.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  border-radius: 4px;
+  width: 55%;
+  padding: 11px 16px;
+  border: 2px solid rgba(209, 236, 253, 1);
+}
+
+.btn-hero {
+  padding: 10px 44px;
+  border-radius: 4px;
+  border: none;
+  width: 45%;
+  background-color: var(--pr-color);
+  color: var(--font);
+}
+
+/* MAIN */
+/* .img-2,
+.img-3 {
+  display: none;
+} */
+.calender {
+  top: 4%;
+  right: 3%;
+}
+
+.img-group {
+  bottom: 5%;
+  right: 5%;
+}
+
+.img-group-2 {
+  bottom: 5%;
+  left: 5%;
+}
+
+.review-container::-webkit-scrollbar {
+  display: none;
+}
+
+.review-container {
+  position: relative;
+  overflow-x: auto;
+  /* scroll-snap-type: x mandatory; */
+  scroll-behavior: smooth;
+  max-width: 100%;
+  /* box-sizing: border-box; */
+}
+
+.review-card {
+  flex: 0 0 auto;
+  /* scroll-snap-align: start; */
+  /* scroll-snap-stop: always; */
+  min-width: 260px;
+  max-width: 367px;
+  background: var(--font);
+  box-shadow: 0px 16px 24px 0px rgba(118, 118, 178, 0.24);
+  box-sizing: border-box;
+}
+
+.arrow-prev,
+.arrow-next {
+  cursor: pointer;
+}
+
+.footer-custom {
+  background-color: var(--sk-color);
+  color: var(--font);
+  height: 500px;
+}
+.footer-content ul {
+  margin: 0;
+  padding: 0;
+}
+.footer-content li {
+  list-style: none;
+}
+.footer-content li a {
+  text-decoration: none;
+  color: var(--font);
+}
+.footer-content-logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.footer-content-ogo img {
+  width: 138px;
+  height: 52px;
+}
+.footer-content-list input {
+  background-image: url("./asset/arrow_forward_24px_white.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  width: 268px;
+  padding: 11px 16px;
+  border-radius: 4px;
+  background-color: rgba(245, 245, 245, 0.24);
+  border: none;
+}
+.footer-content-list input::placeholder {
+  color: var(--font);
+}
+
+@media screen and (max-width: 768px) {
+  .second-text {
+    font-size: 2rem;
+    line-height: 42px;
+  }
+  #hero-section {
+    background-image: url(./asset/hero-img-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+  }
+  .hero-form input {
+    width: 60%;
+  }
+  .hero-form button {
+    width: 40%;
+  }
+  /* .img-2 {
+    display: block;
+  }
+  .img-1,
+  .img-3 {
+    display: none;
+  } */
+  .calender {
+    top: 4%;
+    right: 5%;
+    width: 50%;
+  }
+  .img-group {
+    bottom: 0;
+    top: 5%;
+    right: 6%;
+    width: 40%;
+  }
+  .img-group-2 {
+    bottom: 4%;
+    left: 4%;
+    width: 40%;
+  }
+  .review-card {
+    max-width: 260px;
+  }
+  .footer-custom {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .primary-text {
+    font-size: 2rem;
+    line-height: 42px;
+  }
+  .hero-form {
+    flex-direction: column;
+  }
+  .hero-form input {
+    width: 100%;
+  }
+  .hero-form button {
+    width: 100%;
+  }
+  /* .img-1,
+  .img-2 {
+    display: none;
+  }
+  .img-3 {
+    display: block;
+  } */
+}

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CTARSA</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" /> -->
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!--CSS  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-fixed w-100 py-3 px-sm-0">
+      <div class="container-md mx-md-auto mx-sm-3 mx-2">
+        <a class="navbar-brand" href="#">
+          <img src="./asset/team.svg" alt="Logo" width="138" class="d-inline-block me-2" />
+        </a>
+
+        <button class="navbar-toggler btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-menu " id="navbarNav">
+          <div class="navbar-menu-list d-flex justify-content-between justify-content-md-end flex-column flex-md-row align-items-md-center align-items-start w-100">
+            <ul class="navbar-nav">
+              <li class="nav-item ms-md-5 mx-1">
+                <a class="nav-link" href="#">Product</a>
+              </li>
+              <li class="nav-item ms-md-5 mx-1">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item ms-md-5 mx-1">
+                <a class="nav-link" href="#">Support</a>
+              </li>
+              <li class="nav-item ms-md-5 mx-1">
+                <a class="nav-link" href="#">Log in</a>
+              </li>
+            </ul>
+            <button class="btn-nav ms-md-5 mx-1">Get Access</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="hero-section">
+      <div class="hero-container container-md d-flex justify-content-md-center justify-content-end flex-column h-100 gap-5 px-sm-4 px-3 px-md-0 pb-5 mb-5 pb-md-0 mb-md-0">
+        <div class="hero-text">
+          <h1 class="primary-text col-md-5">Instant collaboration for remote teams</h1>
+          <p class="text col-md-3">All-in-one place for your remote team to chat, collaborate and track project progress.</p>
+        </div>
+        <div class="hero-form col-md-5 d-flex gap-2">
+          <input class="hero-form-input" type="email" placeholder="Email" />
+          <button class="btn-hero">Get Early Access</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="container-fluid py-5 mx-0 px-0" style="background-color: #f5f5f5">
+      <section id="mockup" class="py-5">
+        <div class="mockup-container d-flex flex-column-reverse flex-md-row gap-5">
+          <div class="mockup-content d-flex flex-column justify-content-center gap-md-5 px-md-5 mx-md-5">
+            <div class="d-flex flex-column gap-3 mx-sm-4 mx-3 mx-md-0">
+              <h1 class="primary-text">Chats for your distributed teams</h1>
+              <p class="text">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</p>
+            </div>
+            <div class="d-flex align-items-center gap-3 mx-sm-4 mx-3 mx-md-0">
+              <a href="#" class="text">Learn more</a>
+              <img src="asset/arrow_right_alt_24px.svg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-7 overflow-x-hidden">
+            <img src="./asset/mockup-md.png" alt="" class="img-fluid w-100" />
+            <!-- <img src="./asset/mockup-sm.png" alt="" class="img-2 img-fluid w-100 h-50" />
+            <img src="./asset/mockup.png" alt="" class="img-3 img-fluid w-100 h-50" /> -->
+          </div>
+        </div>
+      </section>
+      <section id="info-section" class="container-md py-5 px-0">
+        <div class="d-flex justify-content-between flex-column flex-md-row flex-sm-row gap-5 gap-sm-0">
+          <div class="col-sm-6 col-md-6 position-relative pe-3 pe-md-0 pe-sm-0">
+            <img src="./asset/rectangle.png" alt="" class="img-fluid w-100 h-100"/>
+            <img src="./asset/calendar.png" alt="" class="img-fluid calender position-absolute" />
+          </div>
+          <div class="col-sm-6 col-md-5 d-flex flex-column justify-content-center gap-md-5 px-sm-4 px-3 px-md-5">
+            <div class="d-flex flex-column gap-3">
+              <h1 class="second-text">Chats for your distributed teams</h1>
+              <p class="text">Team combines the immediacy of real-time chat with an email threading model. With Team, you can catch up on important conversations while ignoring irrelevant ones.</p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <a href="#" class="text">Learn more</a>
+              <img src="asset/arrow_right_alt_24px.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="info-section_2" class="container-md d-flex py-5 px-0">
+        <div class="d-flex justify-content-between flex-column-reverse flex-md-row flex-sm-row gap-5 gap-sm-0">
+          <div class="col-sm-6 col-md-4 d-flex flex-column justify-content-center gap-md-5 px-sm-4 px-3 px-md-0">
+            <div class="d-flex flex-column gap-3 ">
+              <h1 class="second-text">Choose how you want to work</h1>
+              <p class="text">In Team, you’ve got all the flexibility to work when, where and how it’s best for you. You can easily chat, send audio and video clips, or hop on a huddle to talk things out live.</p>
+            </div>
+            <div class="d-flex align-items-center gap-3 ">
+              <a href="#" class="text">Learn more</a>
+              <img src="asset/arrow_right_alt_24px.svg" alt="arrow" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 position-relative pe-3 pe-md-0 pe-sm-0">
+            <img src="./asset/rectangle2.png" alt="" class="img-fluid w-100 h-100" />
+            <div class="img-group d-flex flex-column gap-2 position-absolute">
+              <img src="./asset/progress.png" alt="" class="img-fluid" />
+              <img src="./asset/user.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="info-section_3" class="container-md py-5 px-0">
+        <div class="d-flex justify-content-between flex-column flex-md-row flex-sm-row gap-5 gap-sm-0">
+          <div class="col-sm-6 col-md-6 position-relative pe-3 pe-md-0 pe-sm-0">
+            <img src="./asset/rectangle3.png" alt="" class="img-fluid w-100 h-100" />
+            <div class="img-group-2 d-flex flex-column gap-2 position-absolute">
+              <img src="./asset/progress2.png" alt="" class="img-fluid" />
+              <img src="./asset/user2.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-5 d-flex flex-column justify-content-center gap-md-5 px-sm-4 px-3 px-md-5">
+            <div class="d-flex flex-column gap-3">
+              <h1 class="second-text">Move faster with your Team tools</h1>
+              <p class="text">With your other work apps connected to Team, you can work faster by switching tabs less. And with powerful tools like Workflow Builder, you can automate away routine tasks.</p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <a href="#" class="text">Learn more</a>
+              <img src="asset/arrow_right_alt_24px.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COROUSEL -->
+      <section class="container-fluid my-5 ">
+        <h1 class="primary-text text-center">What people say about Team</h1>
+        <div class=" row ms-md-5 ps-md-5">
+          <div class="review-container d-flex gap-md-5 gap-3 my-md-5 py-5 ps-md-5 ps-4">
+            <div class="review-card d-flex flex-column py-5 px-4 gap-4" id="slide-1">
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex">
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                </div>
+                <div>
+                  <p class="text">
+                    Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="./asset/person.png" class="rounded-circle" style="width: 56px; height: 56px" />
+                <div class="d-flex flex-column">
+                  <h4 class="m-0">Ronald Richards</h4>
+                  <p class="m-0" style="color: #7676b2">Barone LLC.</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-card d-flex flex-column py-5 px-4 gap-4" id="slide-1">
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex">
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                </div>
+                <div>
+                  <p class="text">
+                    Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="./asset/person.png" class="rounded-circle" style="width: 56px; height: 56px" />
+                <div class="d-flex flex-column">
+                  <h4 class="m-0">Ronald Richards</h4>
+                  <p class="m-0" style="color: #7676b2">Barone LLC.</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-card d-flex flex-column py-5 px-4 gap-4" id="slide-1">
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex">
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                </div>
+                <div>
+                  <p class="text">
+                    Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="./asset/person.png" class="rounded-circle" style="width: 56px; height: 56px" />
+                <div class="d-flex flex-column">
+                  <h4 class="m-0">Ronald Richards</h4>
+                  <p class="m-0" style="color: #7676b2">Barone LLC.</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-card d-flex flex-column py-5 px-4 gap-4" id="slide-1">
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex">
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                </div>
+                <div>
+                  <p class="text">
+                    Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="./asset/person.png" class="rounded-circle" style="width: 56px; height: 56px" />
+                <div class="d-flex flex-column">
+                  <h4 class="m-0">Ronald Richards</h4>
+                  <p class="m-0" style="color: #7676b2">Barone LLC.</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-card d-flex flex-column py-5 px-4 gap-4" id="slide-1">
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex">
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                </div>
+                <div>
+                  <p class="text">
+                    Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="./asset/person.png" class="rounded-circle" style="width: 56px; height: 56px" />
+                <div class="d-flex flex-column">
+                  <h4 class="m-0">Ronald Richards</h4>
+                  <p class="m-0" style="color: #7676b2">Barone LLC.</p>
+                </div>
+              </div>
+            </div>
+            <div class="review-card d-flex flex-column py-5 px-4 gap-4" id="slide-1">
+              <div class="d-flex flex-column gap-4">
+                <div class="d-flex">
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                  <img src="./asset/Star.svg" />
+                </div>
+                <div>
+                  <p class="text">
+                    Vestibulum eu quam nec neque pellentesque efficitur id eget nisl. Proin porta est convallis lacus blandit pretium sed non enim. Maecenas lacinia non orci at aliquam. Donec finibus, urna bibendum ultricies laoreet.
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <img src="./asset/person.png" class="rounded-circle" style="width: 56px; height: 56px" />
+                <div class="d-flex flex-column">
+                  <h4 class="m-0">Ronald Richards</h4>
+                  <p class="m-0" style="color: #7676b2">Barone LLC.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container d-flex justify-content-end gap-4">
+          <img class="arrow-prev" id="prev" src="./asset/arrow_left.svg" />
+          <img class="arrow-next" id="next" src="./asset/arrow_right.svg" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-custom d-flex justify-content-between flex-column pb-3 px-4 px-md-0 ">
+      <div class="container-md footer-content d-flex flex-column flex-md-row pt-5 mt-5 gap-5 ps-0">
+        <div class="footer-content-logo col-md-2 col-sm-4 col-7">
+          <img src="./asset/team.svg" alt="team" />
+          <p class="text">Collaboration platform for mordern team </p>
+        </div>
+        <div class="col d-flex flex-column-reverse flex-sm-column flex-md-row gap-5">
+          <div class="d-flex justify-content-between flex-column flex-md-row flex-sm-row gap-5 w-100">
+            <div class="footer-content-list">
+              <p class="footer-text">Company</p>
+              <ul class="d-flex flex-column gap-3">
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Support</a></li>
+              </ul>
+            </div>
+            <div class="footer-content-list">
+              <p class="footer-text">Features</p>
+              <ul class="d-flex flex-column gap-3">
+                <li><a href="#">Screen Sharing</a></li>
+                <li><a href="#">iOS & Android Apps</a></li>
+                <li><a href="#">File Sharing</a></li>
+                <li><a href="#">User Management</a></li>
+              </ul>
+            </div>
+            <div class="footer-content-list">
+              <p class="footer-text">Contact Us</p>
+              <ul class="d-flex flex-column gap-3">
+                <li><a href="#">info@teamapp.com</a></li>
+                <li><a href="#">1-800-200-300</a></li>
+                <li><a href="#">1010 Sunset Blv.Palo Alta, California</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-content-list">
+            <p class="footer-text">Stay up to date</p>
+            <div>
+              <p>Subscript to out newseller</p>
+              <input type="email" placeholder="Email" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-md mt-5 pt-5 ps-0">
+        <p>© Copyright Team Inc.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
+  </body>
+</html>
